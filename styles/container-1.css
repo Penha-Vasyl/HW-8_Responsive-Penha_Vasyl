@@ -36,7 +36,7 @@
 
 @media (max-width: 1400px) {
   .container-1 {
-    background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 70%, transparent 100%), url(../img/phones.png);
+    background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 70%, transparent 100%), url(../img/container-1/phones.png);
   }
 }
 
@@ -68,8 +68,4 @@
   .container-1_logo-2 {
     justify-content: center;
   }
-}
-
-@media (max-width: 360px) {
-
 }
