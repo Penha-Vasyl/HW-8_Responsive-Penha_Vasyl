@@ -1,0 +1,130 @@
+.container-2 {
+  min-height: 592px;
+  display: flex;  
+  background-repeat: no-repeat;
+  background-position: left;
+  
+}
+
+.container-2_photo {
+  background: url(../img/container-2/photo_container-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 50%;
+}
+
+.container-2_photo-superwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.container-2_photo-wrapper {
+  display: flex;
+    flex-direction: column;
+  padding: 10%;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.container-2_gradient {
+  background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 67%, rgba(255, 255, 255, 0.5) 100%);
+  transform: scaleX(1.05);
+  position: absolute;
+}
+
+.container-2_photo-superwrapper,
+.container-2_gradient {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.block_arsenal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.block_photo_video {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.arsenal {
+  width: 80%;
+  position: relative;
+  z-index: 2;
+}
+
+.photo_video {
+  margin-left: 24%;
+  margin-top: -10%;
+  width: 80%;
+}
+
+.container-2_content {
+  margin-left: 8%; 
+  width: 42%;
+  margin-top: 8%; 
+  z-index: 3;
+}
+
+.link { 
+  font-weight: bold;
+  font-size: 16px;
+  color: #00ADEE;
+}
+
+.container_text {
+  width: 72%;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+}
+
+@media screen and (max-width: 720px) {
+  .container-2 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container-2_gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 67%, rgba(255, 255, 255, 0.5) 100%);
+    transform: scaleY(1.05);
+  }
+
+  .container-2_photo {
+    width: 100%;
+  }
+
+  .container-2_photo-wrapper {
+    width: 100%;
+  }
+
+  .container-2_content {    
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 120px;  
+  }
+
+  .link { 
+    margin-bottom: 60px;
+  }
+
+  .container_text {
+    width: 100%;
+    margin-bottom: 30px; 
+  }
+}

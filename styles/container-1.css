@@ -1,0 +1,75 @@
+.container-1 {
+  min-height: 665px;
+  display: flex;
+  background-color: #F4F6F9; 
+  background-image: url(../img/container-1/phones.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container-1_content {
+  margin-top: 63px; 
+  margin-left: 6%;
+  width: 38%;
+}
+
+.container-1_logo {
+  margin-bottom: 95px;
+}
+
+.container-1_text {
+  font-size: 18px;
+  line-height: 26px;
+  color: #4F4F4F;
+  width: 75%;
+}
+
+.container-1_logo-2 {
+  margin-top: 80px;
+  display: flex;
+  gap: 5%;
+}
+
+.container-1_music:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+  .container-1 {
+    background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 70%, transparent 100%), url(../img/phones.png);
+  }
+}
+
+@media (max-width: 720px) {
+  .container-1 {
+    background-image: unset;
+    justify-content: center;
+    min-height: 580px;
+  }
+
+  .logo_ball {
+    width: 20%;
+  }
+
+  .container-1_content {    
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container-1_text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  
+  .container-1_logo-2 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+
+}

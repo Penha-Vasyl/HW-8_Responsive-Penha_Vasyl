@@ -6,22 +6,30 @@
     <title>HW-9 "Responsive верстка" Penha Vasyl</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/container-1.css" />
+    <link rel="stylesheet" href="styles/container-2.css" />
+    <link rel="stylesheet" href="styles/container-3.css" />
+    <link rel="stylesheet" href="styles/container-4.css" />
+    <link rel="stylesheet" href="styles/container-5.css" />
+    <link rel="stylesheet" href="styles/container-6.css" />
+    <link rel="stylesheet" href="styles/container-7.css" />
+    <link rel="stylesheet" href="styles/footer.css" />    
   </head>
   <body>
     <main>
       <article class="container-1">
         <div class="container-1_content">
           <div class="container-1_logo">
-            <img class="logo_ball" src="img/logo.svg" alt="logo ball">
+            <img class="logo_ball" src="img/container-1/logo.svg" alt="logo ball">
           </div>
           <div class="background_content">
             <h2>Get a personalized football experience tailored just for you</h2>
             <p class="container-1_text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on your team.</p>
             <div class="container-1_logo-2">
-              <img class="container-1_music" src="img/Apple_Store.svg" alt="apple store">
-              <img class="container-1_music" src="img/Google_Play.svg" alt="google play">
+              <img class="container-1_music" src="img/container-1/Apple_Store.svg" alt="apple store">
+              <img class="container-1_music" src="img/container-1/Google_Play.svg" alt="google play">
             </div>
           </div>
         </div>
@@ -30,8 +38,13 @@
 
       <article class="container-2">
         <div class="container-2_photo">
-          <div class="block_arsenal"><img class="arsenal" src="img/Arsenal_v_Chelsea.svg" alt="Arsenal_v_Chelsea"></div>
-          <div class="block_photo_video"><img class="photo_video" src="img/photo_video.jpg" alt="football"></div>
+          <div class="container-2_photo-superwrapper">
+            <div class="container-2_photo-wrapper">
+              <img class="arsenal" src="img/container-2/Arsenal_vs_Chelsi.png" alt="Arsenal_v_Chelsea" />
+              <img class="photo_video" src="img/container-2/photo_video.jpg" alt="football" />
+            </div>
+          </div>
+          <div class="container-2_gradient"></div>
         </div>        
         <div class="container-2_content">
           <a class="link" href="#">WHAT IT DOES</a>
@@ -43,7 +56,7 @@
       </article>
 
       <article class="container-3">
-        <div class="container-3_content">
+        <div class="background_content container-3_content">
           <a class="link" href="#">GET STARTED</a>
           <h3>User-friendly Interface</h3>
           <p class="container_text">The in-game goal clips from every Premier League match are available to Guardian TV customers with a Guardian subscription.</p>
@@ -51,53 +64,76 @@
           <div class="bottom_link">
             <a class="link" href="#">Learn more</a>
           </div>
+        </div>
+        <div class="container-3_background-image">
+          <img src="img/container-3/photo_container-3_mobile.png" />
+        </div>
       </article>
 
       <article class="container-4">
-        <div><h3 class="container_title">Features That Will Tailor Your Experience</h3></div>
+        <h3 class="container_title">Features That Will Tailor Your Experience</h3>
         <div class="container-4_content">
           <div class="container-4_row">
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-1.svg" alt="video play">
-              <p class="container-4_text">• Video highlights for every Premier League and English Football League game</p>
+              <svg  width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M34.0003 0H4.00033C2.15033 0 0.666992 1.48333 0.666992 3.33333V23.3333C0.666992 25.1667 2.15033 26.6667 4.00033 26.6667H12.3337V30H25.667V26.6667H34.0003C35.8337 26.6667 37.317 25.1667 37.317 23.3333L37.3337 3.33333C37.3337 1.48333 35.8337 0 34.0003 0ZM34.0003 23.3333H4.00033V3.33333H34.0003V23.3333ZM25.667 13.3333L14.0003 20V6.66667L25.667 13.3333Z"/>
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>Video highlights for every Premier League and English Football League game</p>
             </div>
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-2.svg" alt="bell">
-              <p class="container-4_text">• Notifications for your teams, including in-game goal clips and Premier League match highlights for Sky TV subscribers with Guardian.</p>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M12.6338 6.80008L10.2505 4.41675C6.25046 7.46675 3.61712 12.1667 3.38379 17.5001H6.71712C6.96712 13.0834 9.23379 9.21675 12.6338 6.80008ZM33.2838 17.5001H36.6171C36.3671 12.1667 33.7338 7.46675 29.7505 4.41675L27.3838 6.80008C30.7505 9.21675 33.0338 13.0834 33.2838 17.5001ZM30.0005 18.3334C30.0005 13.2167 27.2671 8.93341 22.5005 7.80008V6.66675C22.5005 5.28341 21.3838 4.16675 20.0005 4.16675C18.6171 4.16675 17.5005 5.28341 17.5005 6.66675V7.80008C12.7171 8.93341 10.0005 13.2001 10.0005 18.3334V26.6667L6.66712 30.0001V31.6667H33.3338V30.0001L30.0005 26.6667V18.3334ZM20.0005 36.6667C20.2338 36.6667 20.4505 36.6501 20.6671 36.6001C21.7505 36.3667 22.6338 35.6334 23.0671 34.6334C23.2338 34.2334 23.3171 33.8001 23.3171 33.3334H16.6505C16.6671 35.1667 18.1505 36.6667 20.0005 36.6667Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>Notifications for your teams, including in-game goal clips and Premier League match highlights for Sky TV subscribers with Guardian.</p>
             </div>
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-3.svg" alt="HD">
-              <p class="container-4_text">• Brand new video section including dedicated areas for your chosen team, trending video, Premier League, Football league and other major leagues</p>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M31.6667 5H8.33333C6.48333 5 5 6.5 5 8.33333V31.6667C5 33.5 6.48333 35 8.33333 35H31.6667C33.5 35 35 33.5 35 31.6667V8.33333C35 6.5 33.5 5 31.6667 5ZM18.3333 25H15.8333V21.6667H12.5V25H10V15H12.5V19.1667H15.8333V15H18.3333V25ZM21.6667 15H28.3333C29.25 15 30 15.75 30 16.6667V23.3333C30 24.25 29.25 25 28.3333 25H21.6667V15ZM24.1667 22.5H27.5V17.5H24.1667V22.5Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>Brand new video section including dedicated areas for your chosen team, trending video, Premier League, Football league and other major leagues</p>
             </div>
           </div> 
           
           <div class="container-4_row">
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-4.svg" alt="flag">
-              <p class="container-4_text">• Match pages showing live scores, commentary, team line-ups and enhanced match stats to keep you up-to-date on all the action</p>
+              <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M15.9997 4.00008L15.333 0.666748H0.333008V29.0001H3.66634V17.3334H12.9997L13.6663 20.6667H25.333V4.00008H15.9997Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>Match pages showing live scores, commentary, team line-ups and enhanced match stats to keep you up-to-date on all the action</p>
             </div>
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-5.svg" alt="phones">
-              <p class="container-4_text">• The new picture in picture video mode means you can watch goals, manager interviews and more whilst using other areas of the app – so you don’t need to miss any of the action</p>
+              <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M2.21642 28.7499L4.44976 29.6833V14.6333L0.399758 24.3999C-0.283575 26.0999 0.533091 28.0499 2.21642 28.7499ZM34.7164 22.5833L26.4498 2.63325C25.9331 1.38325 24.7164 0.616585 23.4331 0.583252C22.9998 0.583252 22.5498 0.649919 22.1164 0.833252L9.83309 5.91658C8.58309 6.43325 7.81642 7.63325 7.78309 8.91658C7.76642 9.36658 7.84976 9.81659 8.03309 10.2499L16.2998 30.1999C16.8164 31.4666 18.0498 32.2333 19.3498 32.2499C19.7831 32.2499 20.2164 32.1666 20.6331 31.9999L32.8998 26.9166C34.5998 26.2166 35.4164 24.2666 34.7164 22.5833ZM11.1331 10.5833C10.2164 10.5833 9.46642 9.83325 9.46642 8.91658C9.46642 7.99992 10.2164 7.24992 11.1331 7.24992C12.0498 7.24992 12.7998 7.99992 12.7998 8.91658C12.7998 9.83325 12.0498 10.5833 11.1331 10.5833ZM7.79976 28.9166C7.79976 30.7499 9.29976 32.2499 11.1331 32.2499H13.5498L7.79976 18.3499V28.9166Z" />
+              </svg>
+                
+              <p class="container-4_text"><span class="container-4_dot">•</span>The new picture in picture video mode means you can watch goals, manager interviews and more whilst using other areas of the app – so you don’t need to miss any of the action</p>
             </div>
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-6.svg" alt="statistic">
-              <p class="container-4_text">• Live updated league tables including all the domestic, European and major leagues and tournaments</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M26.6667 0H3.33333C1.5 0 0 1.5 0 3.33333V26.6667C0 28.5 1.5 30 3.33333 30H26.6667C28.5 30 30 28.5 30 26.6667V3.33333C30 1.5 28.5 0 26.6667 0ZM10 23.3333H6.66667V11.6667H10V23.3333ZM16.6667 23.3333H13.3333V6.66667H16.6667V23.3333ZM23.3333 23.3333H20V16.6667H23.3333V23.3333Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>Live updated league tables including all the domestic, European and major leagues and tournaments</p>
             </div>
           </div>
 
           <div class="container-4_row">
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-7.svg" alt="phones">
-              <p class="container-4_text">• The Guardian News Vidiprinter. Follow the goals as they go in with our new and improved Vidiprinter</p>
+              <svg width="29" height="38" viewBox="0 0 29 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M25 0.683415L8.33333 0.666748C6.5 0.666748 5 2.16675 5 4.00008V9.00008H8.33333V7.33342H25V30.6667H8.33333V29.0001H5V34.0001C5 35.8334 6.5 37.3334 8.33333 37.3334H25C26.8333 37.3334 28.3333 35.8334 28.3333 34.0001V4.00008C28.3333 2.16675 26.8333 0.683415 25 0.683415ZM11.6667 24.0001H15V12.3334H3.33333V15.6667H9.31667L0 24.9834L2.35 27.3334L11.6667 18.0167V24.0001Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>The Guardian News Vidiprinter. Follow the goals as they go in with our new and improved Vidiprinter</p>
             </div>
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-8.svg" alt="people">
-              <p class="container-4_text">• Match reports, previews and a dedicated news section</p>
+              <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M25.667 10.3333C28.4337 10.3333 30.6503 8.09992 30.6503 5.33325C30.6503 2.56659 28.4337 0.333252 25.667 0.333252C22.9003 0.333252 20.667 2.56659 20.667 5.33325C20.667 8.09992 22.9003 10.3333 25.667 10.3333ZM12.3337 10.3333C15.1003 10.3333 17.317 8.09992 17.317 5.33325C17.317 2.56659 15.1003 0.333252 12.3337 0.333252C9.56699 0.333252 7.33366 2.56659 7.33366 5.33325C7.33366 8.09992 9.56699 10.3333 12.3337 10.3333ZM12.3337 13.6666C8.45033 13.6666 0.666992 15.6166 0.666992 19.4999V23.6666H24.0003V19.4999C24.0003 15.6166 16.217 13.6666 12.3337 13.6666ZM25.667 13.6666C25.1837 13.6666 24.6337 13.6999 24.0503 13.7499C25.9837 15.1499 27.3337 17.0333 27.3337 19.4999V23.6666H37.3337V19.4999C37.3337 15.6166 29.5503 13.6666 25.667 13.6666Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>Match reports, previews and a dedicated news section</p>
             </div>
             <div class="container-4_block">
-              <img class="container-4_icon" src="img/container-4_logo-9.svg" alt="settings">
-              <p class="container-4_text">• And you can achieve super-fan status by personalising your home page with up-to-the-minute information on your team.</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="container-4_icon" d="M0 23.3333V26.6667H10V23.3333H0ZM0 3.33333V6.66667H16.6667V3.33333H0ZM16.6667 30V26.6667H30V23.3333H16.6667V20H13.3333V30H16.6667ZM6.66667 10V13.3333H0V16.6667H6.66667V20H10V10H6.66667ZM30 16.6667V13.3333H13.3333V16.6667H30ZM20 10H23.3333V6.66667H30V3.33333H23.3333V0H20V10Z" />
+              </svg>
+              <p class="container-4_text"><span class="container-4_dot">•</span>And you can achieve super-fan status by personalising your home page with up-to-the-minute information on your team.</p>
             </div>
           </div>            
         </div>
@@ -107,17 +143,17 @@
         <div><h3 class="container_title">What Our Users Say</h3></div>
         <div class="container-5_content">
           <div class="arrow">
-            <img class="arrow-1" src="img/arrow_left.svg" alt="arrow left">
-            <img class="arrow-1" src="img/arrow_right.svg" alt="arrow right">
+            <img class="arrow-1 arrow-1_left" src="img/container-5/arrow_left.png" alt="arrow left">
+            <img class="arrow-1" src="img/container-5/arrow_right.png" alt="arrow right">
           </div>
 
           <div class="container-5_block first-block">
             <div class="title_row">
               <div class="title_row_name">
-                <img class="container-5_photo" src="img/Noah_Jackson.png" alt="Noah Jackson">
+                <img class="container-5_photo" src="img/container-5/Noah_Jackson.png" alt="Noah Jackson">
                 <h4>Noah Jackson</h4>
               </div>                
-              <img class="container-5_twitter" src="img/container-5_twitter.svg" alt="twitter">
+              <img class="container-5_twitter" src="img/container-5/container-5_twitter.svg" alt="twitter">
             </div>
             <p>I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor</p> 
           </div>            
@@ -125,21 +161,21 @@
           <div class="container-5_block">
             <div class="title_row">
               <div class="title_row_name">
-                <img class="container-5_photo" src="img/Noah_Jackson.png" alt="Noah Jackson">
+                <img class="container-5_photo" src="img/container-5/Noah_Jackson.png" alt="Noah Jackson">
                 <h4>Noah Jackson</h4>
               </div>                
-              <img class="container-5_twitter" src="img/container-5_twitter.svg" alt="twitter">
+              <img class="container-5_twitter" src="img/container-5/container-5_twitter.svg" alt="twitter">
             </div>
             <p>I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor</p> 
           </div>
 
-          <div class="container-5_block">
+          <div class="container-5_block container-5_block_mobile">
             <div class="title_row">
               <div class="title_row_name">
-                <img class="container-5_photo" src="img/Darren_Wilson.png" alt="Darren Wilson">
+                <img class="container-5_photo " src="img/container-5/Darren_Wilson.png" alt="Darren Wilson">
                 <h4>Darren Wilson</h4>
               </div>                
-              <img class="container-5_twitter" src="img/container-5_twitter.svg" alt="twitter">
+              <img class="container-5_twitter" src="img/container-5/container-5_twitter.svg" alt="twitter">
             </div>
             <p>Good for scores and commentary but the team lineups have stopped working. </p> 
           </div>
@@ -147,38 +183,38 @@
           <div class="container-5_block">
             <div class="title_row">
               <div class="title_row_name">
-                <img class="container-5_photo" src="img/Michael_Akinuli.png" alt="Michael Akinuli">
+                <img class="container-5_photo" src="img/container-5/Michael_Akinuli.png" alt="Michael Akinuli">
                 <h4>Michael Akinuli</h4>
               </div>                
-              <img class="container-5_twitter" src="img/container-5_twitter.svg" alt="twitter">
+              <img class="container-5_twitter" src="img/container-5/container-5_twitter.svg" alt="twitter">
             </div>
             <p>Good for watching the goals and great for highlights instead of waiting till 10:30 before you can watch highlights on March of the day also no need of sky go</p> 
           </div>
-
+          
           <div class="container-5_block last-block">
             <div class="title_row">
               <div class="title_row_name">
-                <img class="container-5_photo" src="img/Noah_Jackson.png" alt="Noah Jackson">
+                <img class="container-5_photo" src="img/container-5/Noah_Jackson.png" alt="Noah Jackson">
                 <h4>Noah Jackson</h4>
               </div>                
-              <img class="container-5_twitter" src="img/container-5_twitter.svg" alt="twitter">
+              <img class="container-5_twitter" src="img/container-5/container-5_twitter.svg" alt="twitter">
             </div>
             <p>I use this app every day and it's a great way to keep up to date with what's going on in football. It's a shame it won't rotate into landscape mode like its main competitor</p> 
           </div>
 
         </div>
-        <img class="container-5_dots" src="img/dots.svg" alt="Dots">
+        <img class="container-5_dots" src="img/container-5/dots.svg" alt="Dots">
       </article>
 
       <article class="container-6">
         <h3>We have been featured in</h3>
         <div class="container-6_content">
-          <img class="container-6_icon" src="img/container-6_sports_TV.png" alt="Sports TV">
-          <img class="container-6_icon" src="img/container-6_sports.png" alt="Sports">
-          <img class="container-6_icon" src="img/container-6_NBC.png" alt="NBC">
-          <img class="container-6_icon" src="img/container-6_designer_technologi.png" alt="Designer technologi">
-          <img class="container-6_icon" src="img/container-6_DN.png" alt="DN">
-          <img class="container-6_icon" src="img/container-6_sky_sports.png" alt="Sky sports">
+          <img class="container-6_icon" src="img/container-6/container-6_sports_TV.png" alt="Sports TV">
+          <img class="container-6_icon" src="img/container-6/container-6_sports.png" alt="Sports">
+          <img class="container-6_icon" src="img/container-6/container-6_NBC.png" alt="NBC">
+          <img class="container-6_icon" src="img/container-6/container-6_designer_technologi.png" alt="Designer technologi">
+          <img class="container-6_icon" src="img/container-6/container-6_DN.png" alt="DN">
+          <img class="container-6_icon" src="img/container-6/container-6_sky_sports.png" alt="Sky sports">
         </div>
       </article>
 
@@ -186,17 +222,20 @@
         <div class="container-7_content">
           <h3>Get Up Close With Your Team</h3>
           <p class="container_text">If you’re interested in the scores of more than one team (it’s OK, we won’t tell your mates you support two clubs!), you can choose the scores and competitions that matter to you using the ‘My Scores’ section. So, make sure you’re a top-flight football fan by downloading the Football Score Centre now. It’s got all this:</p>
-          <div class="container-1_logo-2">
-            <img class="container-1_music" src="img/Apple_Store.svg" alt="apple store">
-            <img class="container-1_music" src="img/Google_Play.svg" alt="google play">
+          <div class="container-1_logo-2 container-7_logo2">
+            <img class="container-1_music" src="img/container-1/Apple_Store.svg" alt="apple store">
+            <img class="container-1_music" src="img/container-1/Google_Play.svg" alt="google play">
           </div>
         </div>
+        <div class="container-7_background-image">
+          <img src="img/container-7/container-7.png" />
+        </div>        
       </article>
     </main>
 
     <footer>
       <div class="footer">
-        <div><img src="img/footer_logo.svg" alt="logo"></div>
+        <div class="footer_logo"><img src="img/footer/footer_logo.svg" alt="logo"></div>
         <div class="footer_menu">
           <a class="footer_menu_element">Download</a>
           <a class="footer_menu_element">Support</a>
@@ -204,9 +243,9 @@
           <a class="footer_menu_element">Privacy</a>
         </div>
         <div class="social_networks">
-          <img class="social_networks_element" src="img/footer_twitter.svg" alt="twitter">
-          <img class="social_networks_element" src="img/footer_facebook.svg" alt="facebook">
-          <img class="social_networks_element" src="img/footer_instagram.svg" alt="instagram">
+          <img class="social_networks_element" src="img/footer/footer_twitter.svg" alt="twitter">
+          <img class="social_networks_element" src="img/footer/footer_facebook.svg" alt="facebook">
+          <img class="social_networks_element" src="img/footer/footer_instagram.svg" alt="instagram">
         </div>
       </div>        
     </footer>      

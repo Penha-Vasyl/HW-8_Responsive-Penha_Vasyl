@@ -1,0 +1,28 @@
+.container-6 {
+  min-height: 278px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAFAFA;
+}
+
+.container-6_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container-6_icon {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.container-6_icon:hover {
+  transform: scale(1.1);
+}
