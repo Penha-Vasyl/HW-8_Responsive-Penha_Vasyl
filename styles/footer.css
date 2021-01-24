@@ -26,6 +26,8 @@
 
 .footer_menu_element:hover {
   transform: scale(1.1);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .footer_menu_element:active {
@@ -34,6 +36,8 @@
 
 .social_networks_element:hover {
   transform: scale(1.2);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -1, 0.265, 1.55);
 }
 
 .social_networks_element:active {
